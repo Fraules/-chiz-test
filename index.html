@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <!-- Required meta tags -->
@@ -10,62 +10,164 @@
 </head>
 
 <style>
-    .full-screen { height: 600px;}
-    .header h1 {
-        color:black;
-        font-size: 50pt;
-        word-wrap: break-word;
+  .full-screen { height: 600px;}
+   .header h1 {
+    color: #ffc107;
+    font-size: 50pt;
+    word-wrap: break-word;
+  }
 
-    }
-    .header-background{ 
+   .header-background{ 
        background-image: url(https://koico.ru/assets/img/cheese/120.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;                
     }
   
-    body {
-  position: relative;
+  body {
+    position: relative;
       }
-
-.card {
-  margin: 10pt;
+    h1.display-4 {
+    color: #ffc107;
+  
  }
+  .card {
+    margin: 10pt;
+ }
+  dt {
+    font-weight: 700;
+    color: #ffc107;
+  }
+
+  .jumbotron {
+    margin-bottom: 2rem;
+    background-color: rgba(0,0,0,.075);
+    border-radius: .3rem;
+
+  }
+  .modal-content
+  {
+    padding:40px;
+  }
 </style>
+
 <script> 
 
   $('body').scrollspy({ target: '#navbar-example' })
-  $('[data-spy="scroll"]').each(function () {
+   $('[data-spy="scroll"]').each(function () {
     var $spy = $(this).scrollspy('refresh')
   })
-  $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+   $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
     // do something…
   }) 
 
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 </script>
     
- <body data-spy="scroll" data-target="#navbar-example">
-<!--
-  1
--->
-<<div id="navbar-example">
+<body data-spy="scroll" data-target="#navbar-example">
+  <!--  1-->
+<div id="navbar-example">
    <ul class="nav nav-tabs" role="tablist">
    </ul>
  </div>
  <div class="header-background" id="header">
 <div class="container p-5 text-lg-center full-screen header">
-  <div class="row align-items-center mb-5">
-     <div class="col jumbotron"> 
+  <div class="row align-items-center mb-7">
+     <div class="col jumbotron" > 
       <h1 class="display-4"><dt>ECO DEREVUSHKA</dt></h1>
       <div class="col">
         <h2>
-          <dt>Экологически чистые продукты</dt>
+          ЭКОЛОГИЧЕСКИ ЧИСТЫЕ ПРОДУКТЫ
         </h2>
+       
       </div>
+      
+    </div>
   </div>
- </div>
-</div>
-</div>   
+  </div>
+  </div> 
+
+<div class="container p-5">
+
+    <div class="card" style="width: 100%;">
+        <img src="http://cheese.sheltertour.ru/Cheese/Goat%20cheese/1365749928-hi-camember.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Камамбер козий сыр </h5>
+          <p class="card-text">Камамбер – знаменитый нормандский мягкий сыр с белой корочкой, «младший брат» сыра Бри. Однако в силу различий терруара Камамбер получился иным: с более выраженным ароматом, с более плотной и насыщенной по вкусу мякотью.</p>
+          <h5><span class="badge badge-success">2000 рублей.</span></h5>
+        
+          <a href="#" class="btn btn-primary">КУПИТЬ</a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+          <img src="http://cheese.sheltertour.ru/Cheese/Goat%20cheese/1365749928-hi-camember.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Сыр Гауда из козьего молока  </h5>
+            <p class="card-text">Сыр Гауда (Gouda). Твёрдый сыр из козьего молока по древним голландским рецептам</p>
+            <h5><span class="badge badge-success">2200 рублей.</span></h5>
+          
+            <a href="#" class="btn btn-primary">КУПИТЬ</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="http://cheese.sheltertour.ru/Cheese/Goat%20cheese/1365749928-hi-camember.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Камамбер коровий сыр  </h5>
+              <p class="card-text">Коровий сыр Камамбер, 1000 руб за 1кг сыра.</p>
+              <h5><span class="badge badge-success">1000 рублей.</span></h5>
+            
+              <a href="#" class="btn btn-primary">КУПИТЬ</a>
+            </div>
+          </div>
+
+  </div>
+  <div class="container p-5">
+
+
+      <div class="card" style="width: 18rem;">
+          <img src="http://cheese.sheltertour.ru/Cheese/Goat%20cheese/1365749928-hi-camember.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Сыр Гауда (Gouda) из коровьего молока </h5>
+            <p class="card-text">Гауда не менее 2 мес. Твёрдый сыр из коровьего молока по древним голландским рецептам. Продается от 300 гр. Доставка заказов Среда - Пятница партнерской курьерской службой.
+              </p>
+            <h5><span class="badge badge-success">1800 рублей.</span></h5>
+          
+            <a href="#" class="btn btn-primary">КУПИТЬ</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="http://cheese.sheltertour.ru/Cheese/Goat%20cheese/1365749928-hi-camember.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Сыр Качиотта (Caciotta) из коровьего молока </h5>
+              <p class="card-text">Сыр коровий твердый. Продается от 300 гр. Доставка заказов Среда - Пятница партнерской курьерской службой.
+                </p>
+              <h5><span class="badge badge-success">1000 рублей</span></h5>
+            
+              <a href="#" class="btn btn-primary">КУПИТЬ</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+              <img src="http://cheese.sheltertour.ru/Cheese/Goat%20cheese/1365749928-hi-camember.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Качиотта (Caciotta) cыр козий твердый </h5>
+                <p class="card-text">Козья Качотта — итальянский полумягкий сыр с закрытой структурой. Качотта — очень популярный на своей родине сыр, его готовят в Италии повсеместно, используя различные виды молока и дополняя его различными добавками. Имеется великое множество разновидностей этого сыра, и мы можем говорить о целом семействе сыров, называемых этим именем.
+                  </p>
+                <h5><span class="badge badge-success">1000 рублей</span></h5>
+              
+                <a href="#" class="btn btn-primary">КУПИТЬ</a>
+              </div>
+            </div>
+
+    </div>
+
+
 <!--
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
   <a class="navbar-brand" href="#header">ЭКОДЕРЕВУШКА</a>
@@ -89,80 +191,92 @@
       ВЫБИРАЙ НА СВОЙ ВКУС
     </span>
   </div>
-</nav>
+</nav> -->
 
-<!--
-  2
--->
-<div class"container p-5 mx-auto"  id="onas">
- <div class="row p-5 mb-5">
-     <div class="col text-center">
-            <h1 >О НАС</h1>
+<!-- Button trigger modal -->
+<div class="container p-5">
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">
+    Гарантия качества
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">   <dt>Гарантия качества </dt></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
- <div class="row p-5">
-     <div class="col">
-             <p class="text-justify lead"> 
-               Козье молоко является одним из самых незаменимых продуктов для детского питания, так как по составу схоже с женским грудным молоком. 
-                Для получения молока высоко качество необходимо, чтобы животные были здоровы. Для этого необходимо профилактировать внутренние незаразные патологии, инфекционные и инвазионные болезни.
-                С этой целью в нашем хозяйстве проводятся исследования, выполняемые ветеринарным врачом, аспирантом кафедры паразитологии и инвазионных болезней животных ФГБОУ ВПО МГАВМиБ им. К.И. Скрябина Цепиловой И.И. 
-                под руководством заслуженного деятеля науки РФ, доктора ветеринарных наук, профессора Акбаева М.Ш. Специалисты Цепилова И.И. и Акбаев М.Ш. регулярно посещают хозяйство. 
-                Они отбирают весь необходимый материал для исследования, осматривают поголовье коз на различные патологии, посещают пастбища, наблюдая за качеством употребляемого корма животными,
-                отслеживают параметры микроклимата в помещениях, наблюдают за процессом доения.
-                </p> 
-              <p class="text-justify lead">© ЭкоДеревушка.рф</p>
-         </div>
-         </div>
-     
-     
+        <div class="modal-body">
+            Если Вас не устроила наша продукция, её необходимо вернуть!
+            Мы уважаем мнение наших покупателей и доверяем Вам. Если продукт не понравился Вам по вкусу или не соответствует вашим представлениям о качестве – верните его обратно или сообщите нам об этом. Вернув некачественный продукт, вы помогаете нам стать еще лучше, потому что каждая жалоба учитывается нами. И в следующий раз вы совершите покупку более качественного продукта. Всегда пробуйте наш продукт на ферме. Он всегда разный на вкус, так как мы производим продукты только из свежего не нормализованного молока.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
-<div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
-  <p>
-    Some example text that's free-flowing within the dropdown menu.
-  </p>
-  <p class="mb-0">
-    And this is more example text.
-  </p>
+  </div>
+
+
+
+ <!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Сертификаты</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <dt>Cертификаты </dt><br>
+        У нас ведется постоянный контроль ветеринарного врача за состоянием здоровья животных. Абсолютно исключена возможность попадания на дойку больных животных. Уникальные условия содержания козочек, чистота и простор размещения. Животные свободно пасутся на натуральных кормах, зимой основа рациона — сено и овощи, заготовленные в экологически чистых регионах России. В нашем хозяйстве не используются стимуляторы, ускорители роста, антибиотики и консерванты. Мы производим только натуральный продукт, только высшего качества, по доступной (адекватной) цене. Произведенное в нашем хозяйстве цельное питьевое молоко не требует кипячения, козье молоко максимально сбалансировано по своему составу и идеально подходит для детей, начиная с первого месяца жизни. Также оно подойдет подросткам и взрослым, особенно выздоравливающим или подверженным физическим и эмоциональным нагрузкам. Козье молоко повышает иммунитет, содержит максимально сбалансированную для человека формулу витаминов и микроэлементов. Чрезвычайно редко встречается индивидуальная непереносимость козьего молока. Для того, чтобы избежать неприятных последствий, следует начинать употреблять в пищу козье молоко в разведенном виде — одна часть молок на три части кипяченой воды.
+    </div>
+  </div>
 </div>
+</div>
+ 
 <!--      3 -->
 <div class="container p-5">
  <div class="row mb-5">
      <div class="col">
-         <h1 class="mb-5 text-center" >Сыры</h1>
-         <h4 class="mb-5 text-center" id="vbor">Выбор сорта</h4>
+        <h1> СЫРЫ СОРТОВ <span class="badge badge-secondary">New</span></h1>
      </div>
-  </div>
  <div class="row justify-content-center">
   <div class="card" style="width: 20rem;">
     <img src="http://cheese.sheltertour.ru/Cheese/Goat%20cheese/1365749928-hi-camember.jpg" class="card-img-top" alt="..."   >
     <div class="card-body">
-      <p class="card-text">Камамбер Козий сыр 2000 (₽)
+      <p class="card-text">Камамбер козий сыр 2000 рублей
       </p>
+      <span class="badge badge-primary">КОЗИЙ</span>
     </div>
   </div>
 
     <div class="card" style="width: 20rem;">
       <img src="http://www.kfh-dar.ru/wp-content/uploads/2017/05/gauda.jpg" class="card-img-top" alt="..." >
       <div class="card-body">
-        <p class="card-text">Сыр Гауда из козьего молока 2200 (₽)
+        <p class="card-text">Сыр Гауда из козьего молока 2200 рублей
         </p>
+        <span class="badge badge-primary">КОЗИЙ</span>
       </div>
     </div>
     <div class="card" style="width: 20rem;">
       <img src="http://findfood.ru/attaches/product/molochnie/sir-kamamber.jpg" class="card-img-top" alt="..." >
       <div class="card-body">
-        <p class="card-text-top">Камамбер Коровий сыр 1000 (₽)
+        <p class="card-text-top">Камамбер Коровий сыр 1000 рублей
         </p>
+        <span class="badge badge-secondary">КОРОВИЙ</span>
       </div>
     </div>
 
     <div class="row justify-content-center">
-    
       <div class="card" style="width: 20rem;">
         <img src="https://m.dom-eda.com/uploads/images/catalog/item/5434060327/e2a058b6f5_500.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text-top">Сыр Гауда (Gouda) из коровьего молока
-          1800 (₽) 
+          1800 рублей 
           </p>
+          <span class="badge badge-secondary">КОРОВИЙ</span>
         </div>
       </div>
     
@@ -172,15 +286,72 @@
           <p class="card-text">Сыр Качиотта (Caciotta) из коровьего молока
           1000 (₽) 
           </p>
+          <span class="badge badge-secondary">КОРОВИЙ</span>
         </div>
       </div>
       <div class="card" style="width: 20rem;">
         <img src="https://img01-olxua.akamaized.net/img-olxua/372099502_1_644x461_cyr-kachotta-iz-kozego-moloka-tverdyy-koziy-syr-po-luchshim-tsenam-odessa.jpg" class="card-img-top" alt="..."  >
         <div class="card-body">
-          <p class="card-text">Сыр Качиотта из козьего молока 2200 (₽)
+          <p class="card-text">Сыр Качиотта из козьего молока 2200 рублей
           </p>
+          <span class="badge badge-primary">КОЗИЙ</span>
         </div>
       </div>
+    </div>
+ <!--2-->
+ <div class="container p-5">
+          
+    <div class="col">
+        <h1> О НАС </h1>
+     </div>
+
+                       <div class="card">
+                          <div class="card-body">
+                              Почему козье молоко надо покупать у нас<br>
+                              Мы современная козья ферма находимся в ближайшем Подмосковье на берегу реки Пахра, где животные чувствуют себя комфортно не зависимо от времени года.
+                              Для кормления животных используются проверенные корма: луговое сено от наших друзей, ивовые осиновые и березовые веники от наших детей и сбалансированный комбикорм от Истрахлебпродукт. Еще по сезону мы добавляем в корма: яблоки, морковь, свеклу, турнепс, капусту,тыкву, кабачок, патиссон, картофель выращенные на своей земле.
+                          </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-body">
+                                  Козы доятся доильным аппаратом «ДеЛаваль«, который своевременно проходит техническое обслуживание с заменой шлангов и сосковой резиной 2 раза в год не зависимо от износа. После каждой дойки аппарат моется современными средствами на натуральной основе.
+                                  Во время дойки, вымя коз, обрабатывается составами из натуральных компонентов, которые хорошо очищают вымя перед дойкой и обеспечивают защиту после дойки. Каждая коза имеет индивидуальное полотенце для протирки вымени после обработки составом «перед дойкой». Все полотенца ежедневно стираются в стиральной машине с порошком не содержащий фосфаты.
+                                  Мы не используем моющие средства для посуды. Все моем только натуральным мылом и натуральной горчицей.
+                              </div>
+                            </div>
+                              <div class="card">
+                                  <div class="card-body">
+                                Все работники фермы проходят медицинские осмотры и сдают анализы.
+                      Козья ферма стоит на учете в Подольской станции по борьбе с болезнями животных. Ветеринары станции ежеквартально осматривают коз и раз в год делают анализ на бруцеллез и необходимые прививки.
+                    </div>
+                  </div>
+                  
+                    <div class="card">
+                        <div class="card-body">
+                            Два раза в год мы глистогоним коз и обрабатываем от клещей и паразитов. Молоко обработанных коз утилизируется минуя переработку.
+                            Еженедельно молоко каждой козы проверяется на мастит, при малейшем сомнении коза доится отдельно. Наше молоко без гноя. Оно безопасно!
+                            Круглосуточно на ферме находится дипломированный зоотехник для контроля за животными и работой дояров.
+                        </div>
+                      </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                Все работники фермы проходят медицинские осмотры и сдают анализы.
+                      Козья ферма стоит на учете в Подольской станции по борьбе с болезнями животных. Ветеринары станции ежеквартально осматривают коз и раз в год делают анализ на бруцеллез и необходимые прививки.
+                            </div>
+                      </div>
+
+                    <footer class="blockquote-footer">TM ECO_DEREVUSHKA<cite title="Source Title">2019</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+              <div class="card">
+                  <div class="card-body">
+                      Все продукты готовим только из натуральных ингредиентов. Все животные в нашем хозяйстве обитают в естественных условиях.
+                  </div>
+                </div>
+    
    <!--  <div class="col-md-4 mb-5">
           <img src="http://cheese.sheltertour.ru/Cheese/Goat%20cheese/1365749928-hi-camember.jpg" width="150px" height="150px" class="rounded-circle">
            <h3>Камамбер Козий сыр</h3>
@@ -274,6 +445,8 @@
     </div>
     </div>
 
+
+
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     <div class="col-md-4">
@@ -290,6 +463,8 @@
 <!--
   5
 -->
+
+
 <div class="container p-5 text-center full-screen">       
 
 <div class="label label-info">    
@@ -302,6 +477,20 @@
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Лицензия Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/>Доступно по <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">лицензии Creative Commons С указанием авторства 4.0 Всемирная</a></pre>
 </div>
 </div>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded mr-2" alt="...">
+      <strong class="mr-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+        <dt>Если продукт не понравился Вам по вкусу или не соответствует вашим представлениям о качестве – верните его обратно.</dt>
+      </div>
+    </div>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
